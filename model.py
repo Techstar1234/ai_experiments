@@ -1,7 +1,5 @@
-# Generated on 2026-08-04T21:32:39.323717
+# Generated on 2026-08-05T19:01:55.319101
 
-class SimpleModel:
-    def __init__(self):
-        self.weights = []
-    def forward(self, x):
-        return x
+def calculate_loss(y_true, y_pred):
+    import numpy as np
+    return np.mean((y_true - y_pred)**2)
